@@ -1,0 +1,78 @@
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.gallery img:hover{
+    width:110%;
+    height:310px;
+    transition: height 0.3s ease;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  padding: 40px;
+}
+.title {
+    font-size: 90px;
+    font-family: 'helvetica-bold'; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subtext {
+  font-size: 15px;
+  font-family: creatodisplay-regular;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.image-overlay {
+    position: relative;        /* establishes positioning context */
+    display: inline-block;     /* keeps container tight around image */
+}
+
+.image-overlay img {
+    display: block;            /* removes weird inline spacing */
+}
+.image-overlay p {
+  position: absolute;
+  bottom: 10px;              
+  left: 10px;               
+  margin: 0;
+  padding: 6px 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'CreatoDisplay-Regular';
+  background: rgba(0,0,0,0.4); /* optional: subtle readability layer */
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.image-overlay:hover p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.bannervid {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: none;
+}
