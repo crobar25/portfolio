@@ -1,0 +1,7 @@
+title: Connor Ng Portfolio Site
+description: Personal website hosted on GitHub Pages
+theme: minima # This is the standard, built-in default Jekyll theme
+
+# Crucial for GitHub Pages to link your pages correctly:
+url: "https://github.io" 
+baseurl: "/portfolio" 
