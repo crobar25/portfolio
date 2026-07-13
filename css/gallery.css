@@ -31,14 +31,14 @@
   padding: 40px;
 }
 .title {
-    font-size: clamp(1.5rem, 90vw, 5rem);
+    font-size: 20px;
     font-family: 'helvetica-bold'; 
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .title-regular {
-  font-size: clamp(1.5rem, 90vw, 5rem);
+  font-size: 20px;
   font-family: 'helvetica';
   display: flex;
   flex-direction: row;
