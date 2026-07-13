@@ -77,6 +77,23 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+.image-overlay:hover h5 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-overlay h5 {
+  position: absolute;
+  top: 10px;              
+  left: 10px;               
+  margin: 0;
+  padding: 6px 10px;
+  color: white;
+  font-size: 12px;
+  font-family: 'CreatoDisplay-light';
+  background: rgba(0,0,0,0.4); /* optional: subtle readability layer */
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
 .bannervid {
   width: 100%;
   height: auto;
