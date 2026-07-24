@@ -150,6 +150,24 @@
   padding: 40px;
   font-family: "Helvetica";
 }
+.photogallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 30px;
+  overflow-x: clip;
+
+}
+.photogallery img {
+  width: 50%;
+  max-width: 500px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
 @font-face {
   font-family: 'Helvetica'; /* Give your font a name */
   src: url('../assets/fonts/Helvetica.ttf') format('truetype'); /* Path to your file */

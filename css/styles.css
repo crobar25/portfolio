@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-color:rgb(255, 255, 252);
+    background-color:white(255, 0, 0);
     margin: 0 0;
     height: 100vh;
 }
@@ -19,7 +19,6 @@ body {
 	justify-content: space-between;
     box-sizing: border-box;
 	flex-grow: 1;
-    border-radius: 20px;
     backdrop-filter: blur(2px) saturate(180%);
     background-color: rgb(255, 255, 255);
 }
@@ -140,12 +139,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     color:white;
     background-color: rgb(16, 16, 16);
-
+    overflow-x: clip;
 }
 .scroller::-webkit-scrollbar{
     display: none;
@@ -153,6 +151,7 @@ footer {
 .scroller {
     overflow: hidden;
     white-space: nowrap;
+    overflow-x: clip;
 } 
 .track {
     display: inline-flex;
@@ -169,7 +168,6 @@ footer {
     right: 0%;
     white-space: nowrap;
     margin: none;
-    margin-right: 40px;
     gap: 10px;
     
 }
@@ -230,6 +228,9 @@ footer p {
     font-size:50px;
     margin-left: 40px;
     margin-top: 40px;
+}
+html, body {
+    overflow-x: hidden;
 }
 .info {
     display: flex;
