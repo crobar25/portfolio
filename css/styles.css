@@ -83,38 +83,9 @@ body {
     transition: transform 0.3s ease;
     color: rgb(187, 187, 187);
 }
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
 
-.hamburger span {
-  width: 28px;
-  height: 3px;
-  background: white;
-}
-@media (max-width: 768px) {
-  .nav-item {
-    display: none; /* hide menu on mobile */
-    flex-direction: column;
-    background: rgb(16, 16, 16);
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    padding: 20px;
-    border-radius: 10px;
-  }
+/*----------------------HAMBURGER---------------------------------*/
 
-  .nav-items.open {
-    display: flex; /* show when JS toggles class */
-  }
-
-  .hamburger {
-    display: flex; /* show hamburger on mobile */
-  }
-}
 hr {
     width: auto;
     height: .4px;
@@ -195,7 +166,7 @@ footer {
     right: 0%;
     white-space: nowrap;
     margin: none;
-    gap: 10px;
+    gap: 20px;
     
 }
 @keyframes slide {
@@ -317,6 +288,7 @@ html, body {
     transform: translateY(0);
   }
 }
+/*---------------------------FONTS----------------*/
 @font-face {
   font-family: 'Helvetica-Bold'; /* Give your font a name */
   src: url('../assets/fonts/Helvetica-Bold.ttf') format('truetype'); /* Path to your file */
