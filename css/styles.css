@@ -47,7 +47,6 @@ body {
     margin: auto auto;
     font-family: 'CreatoDisplay-light';
 }
-
 .headshot {
     max-width: 300px;
     min-width: 200px;
@@ -84,6 +83,38 @@ body {
     transition: transform 0.3s ease;
     color: rgb(187, 187, 187);
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+}
+@media (max-width: 768px) {
+  .nav-item {
+    display: none; /* hide menu on mobile */
+    flex-direction: column;
+    background: rgb(16, 16, 16);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-items.open {
+    display: flex; /* show when JS toggles class */
+  }
+
+  .hamburger {
+    display: flex; /* show hamburger on mobile */
+  }
+}
 hr {
     width: auto;
     height: .4px;
@@ -117,21 +148,17 @@ hr {
     display: block;
     transform: translateY(0)
 }
-
 .dropdown-content a {
   opacity: 0;
   transform: translateY(10px);
   animation: dropdownFade 0.35s ease forwards;
 }
-
 .dropdown:hover .dropdown-content a:nth-child(1) {
   animation-delay: 0.05s;
 }
-
 .dropdown:hover .dropdown-content a:nth-child(2) {
   animation-delay: 0.12s;
 }
-
 .dropdown:hover .dropdown-content a:nth-child(3) {
   animation-delay: 0.19s;
 }
