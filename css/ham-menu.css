@@ -63,6 +63,12 @@
     transform: translate(-50%, -50%);
     transition: .3 ease;
 }
+.ham-menu, 
+.ham-menu span,
+.off-screen-menu a,
+.off-screen-menu {
+    -webkit-tap-highlight-color: transparent;
+}
 .ham-menu span:nth-child(1) {
 top: 30%;
 }
