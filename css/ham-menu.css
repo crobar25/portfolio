@@ -117,3 +117,8 @@ top: 30%;
     gap: 30px;
   }
 }
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
