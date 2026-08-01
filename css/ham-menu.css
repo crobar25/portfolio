@@ -1,21 +1,32 @@
 .off-screen-menu {
     background-color:rgb(238, 238, 238);
     font-family: CreatoDisplay-regular;
-    color: black;
     height: 100vh;
     width: 100%;
     max-width: 450px;
     top: 0;
     position: fixed;
-    right: -450px;
+    right: -500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: .3 ease;
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    padding-right: 50px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+.off-screen-menu a {
+  color: black;
+}
+.off-screen-menu link {
+  color: black;
 }
 .off-screen-menu.active {
     right: 0;
@@ -27,7 +38,11 @@
     height: 50px;
     width: 50px;
     margin-left: auto;
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
 }
 .ham-menu span {
     height: 0.5px;

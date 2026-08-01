@@ -23,11 +23,15 @@ body {
 	flex-grow: 1;
     backdrop-filter: blur(2px) saturate(180%);
     background-color: rgb(255, 255, 255);
-    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease-in-out;
 }
 .nav-header :hover {
     color: rgb(76, 76, 76);
     transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 .fullscreen-content {
     width: 100%;
