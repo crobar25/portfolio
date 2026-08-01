@@ -66,7 +66,8 @@
 .ham-menu, 
 .ham-menu span,
 .off-screen-menu a,
-.off-screen-menu {
+.off-screen-menu,
+.nav-item {
     -webkit-tap-highlight-color: transparent;
 }
 .ham-menu span:nth-child(1) {
