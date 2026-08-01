@@ -1,6 +1,7 @@
 .off-screen-menu {
     background-color:rgb(238, 238, 238);
     font-family: CreatoDisplay-regular;
+    color: black;
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -14,6 +15,7 @@
     text-align: center;
     font-size: 1.5rem;
     transition: .3 ease;
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .off-screen-menu.active {
     right: 0;
